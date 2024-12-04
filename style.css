@@ -1,0 +1,590 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+header {
+    background-color: #088df3;
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 100%;
+}
+header a{
+    color: #eee;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+li a:hover {
+    color: rgb(7, 7, 7); 
+}
+.buscador-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.campo-busca {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .botao-buscar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .botao-buscar:hover {
+    background-color: #45a049;
+  }
+  .imagem-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as imagens */
+}
+
+.imagem-container img {
+    width:24%; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+.med{
+    color: #0056b3;
+}
+main {
+    padding: 2rem;
+}
+
+.hero {
+    background-color: #eee;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.medicamento {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 380px;
+    margin: 10px;
+}
+
+.imagem {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
+    border-radius: 8px 0 0 8px;
+}
+
+.descricao {
+    padding: 15px;
+    flex: 1;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.descricao-texto {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.btn-carrinho {
+    background-color: #28a745; /* Cor verde */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-carrinho:hover {
+    background-color: #218838; /* Cor verde escuro no hover */
+}
+
+.btn-carrinho:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*carrinho de compra*/
+.cart {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+
+    .cart .fa-shopping-cart {
+    color: white;
+    }
+
+.cart .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    padding: 5px 10px;
+    }
+
+ /* Carrinho */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    }
+
+.cart-container h2 {
+    margin-bottom: 20px;
+    }
+
+.cart-items {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.cart-items ul {
+    list-style: none;
+    padding: 0;
+    }
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    }
+
+.cart-items .item-name {
+    font-weight: bold;
+    }
+
+.cart-items .item-price {
+    color: green;
+    }
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    }
+
+.btn {
+    padding: 10px 20px;
+    background-color:#088df3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+.btn:hover {
+    background-color: #000000;
+    }
+
+
+/* tela de LOGIN */
+.loginl{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-left: 37vw;
+    margin-top: 9vh;
+
+}
+
+.log2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #00409d;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.forgot-password a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.sobre {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.sobre .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sobre h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.sobre p {
+    text-align: justify;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilo para Missão, Visão e Valores */
+.missao-visao-valores {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.missao-visao-valores > div {
+    width: 30%;
+}
+
+.missao-visao-valores h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.missao-visao-valores p {
+    font-size: 16px;
+    color: #555;
+}
+
+.missao-visao-valores ul {
+    list-style-type: none;
+}
+
+.missao-visao-valores ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+/* Estilo da seção "Contato" */
+.contato {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.contato .container {
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contato h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.informacoes {
+    margin-bottom: 40px;
+}
+
+.informacoes h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.informacoes p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.informacoes ul {
+    list-style-type: none;
+}
+
+.informacoes ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilo do formulário */
+.formulario {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+/* Responsividade - Ajustes para telas menores */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corpo {
+        width: 90%;
+    }
+    .login-container{
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+        margin-left: 20vw;
+        margin-top: 9vh;
+    }
+    header{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        width: 100%;
+
+    }
+    nav ul li a {
+        font-size:10px;
+
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .corpo{
+        width: 100%;
+    }
+    .buscador-container{
+        width: 10%;
+    }
+    .campo-busca{
+        width: 60%;
+        position:relative;
+        font-size: 10px;
+        margin-right: 150px;
+    }
+    .botao-buscar{
+        width: 70%;
+        font-size: 5px;
+        padding: 5px;
+    }
+    .medicamento{
+        right: 200px;
+        padding: 2.5px;
+        width: 100%;
+        font-size: 10px;
+    }
+    .medicamento  .descricao .btn-carrinho{
+        padding: 5%;
+        font-size: 10px;
+    }
+    .descricao-texto{
+        font-size: 10px;
+    }
+    .descricao h3{
+        font-size: 10px;
+    }
+    .descricao .preco{
+        font-size: 10px;
+
+    }
+    .login-container{
+
+        margin-left: 1vw;
+        margin-top: 5vh;
+    }
+ 
+}
+

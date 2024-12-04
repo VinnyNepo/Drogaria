@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>DROGARIA DESCONTO</h1>
+        <nav>
+            <ul>
+                <li><a href="proj.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Container principal do login -->
+    <main clas="corpo">
+        <div class="login-container">
+            <h2 class="log2">Login</h2>
+
+            <!-- Formulario de login -->
+            <form action="#" method="POST">
+                <!-- Campo de nome de usuario -->
+                <div class="input-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+                </div>
+
+                <!-- Campo de senha -->
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+
+                <!-- Botão de login -->
+                <button type="submit" class="login-btn">Entrar</button>
+
+                <!-- Link de recuperação de senha -->
+                <div class="forgot-password">
+                    <a href="#">Esqueceu a senha?</a>
+                    <a href="#">Criar Conta</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
